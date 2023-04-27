@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Languages = ({languages ,onlanguagesChange}) => {
+const Languages = ({language ,onlanguagesChange}) => {
   return (
     <div>
       <label>select languages</label>
+      {language}{onlanguagesChange}
     </div>
   )
 }

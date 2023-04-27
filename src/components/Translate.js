@@ -1,7 +1,7 @@
 import React, { useTransition } from 'react'
 
-const Translate = (languages, text) => {
-    const [Translated]=useTransition(text, languages)
+const Translate = (language, text) => {
+    const [Translated]=useTransition(text, language)
   return (
     <div>
       <label className='label'>output</label>

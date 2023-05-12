@@ -1,20 +1,14 @@
-import React,{useState} from "react";
-import Field from "./components/Field";
-import Translate from "./components/Translate";
-import Languages from "./components/Languages";
+import React from 'react';
 
-function App() {
-  const [language,setLanguage]=useState("es")
-  const [text,setText]=useState("")
+import Home from './components/Home';
 
+const App = () => {
   return (
-    <div className="App">
-      <Field onChange={setText}/>
-      <Languages language={language} onlanguagesChange={setLanguage}/>
-      <hr/>
-      <Translate text={text} language={language}/>
+    <div>
+      <h1>Counter App</h1>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

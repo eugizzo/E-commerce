@@ -2,14 +2,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  songs:[
-    {id:1,
-    songs:'harry'
-  },
-  {id:2,
-    songs:'one love'
-  }
-  ],
+  songs:[],
 }
 const songSlice=createSlice({
   name:'songs',

@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: '4px';
+}
+.remove{
+    padding: '6px';
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+}

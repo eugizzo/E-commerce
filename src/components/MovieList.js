@@ -73,8 +73,6 @@ const MovieList = () => {
               <tbody className="text-sm divide-y divide-gray-100">
       {myMovie.map((list)=>(
 
-
-      
                 <tr key={list.id}>
                  
                   <td className="p-2 whitespace-nowrap">
@@ -94,29 +92,11 @@ const MovieList = () => {
     </div>
 
 
-
- 
   </div>
   
 
 </div>
 
-
-
-
-
-
-
-
-
-{
-  myMovie.map((list)=>(
-  <div className='flex pt-4 '>
-  <h3 className='p-2'>{list.addNewMovie}</h3>
-  <h3 className='p-2'>{list.addYear}</h3>
-  <button className='pl-2 bg-red-400 w-20 rounded-xl text-white font-bold' onClick={deleteHandele}>Remove</button>
-  </div>))
-}
     </div>
   )
 }

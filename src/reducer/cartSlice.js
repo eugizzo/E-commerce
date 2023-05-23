@@ -11,7 +11,10 @@ const cartSlice = createSlice({
       state.push(action.payload);
     },
     removeCart(state, action){
-      state.cart.splice(action.payload, 1);
+      const index = state.indexOf(action.payload);
+      if (index !== -1) {
+        state.splice(index, 1);
+      }
     },
   },
 });

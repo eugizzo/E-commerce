@@ -4,6 +4,8 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import MovieList from './components/MovieList';
 import UserList from './components/UserList';
+import CartPage from './components/CartPage';
+
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<MovieList />} />
         <Route path="/users" element={<UserList />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </Router>
   );

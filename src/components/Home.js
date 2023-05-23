@@ -9,10 +9,10 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const count = useSelector(getAllSong);
   const cartCount = useSelector(state=>state.cart);
-  console.log(count)
+
   const dispatch = useDispatch();
 
-console.log(count)
+
 
 const fetctProduct= async ()=>{
  const response = await axios.get('https://fakestoreapi.com/products')
@@ -31,8 +31,8 @@ const fetctProduct= async ()=>{
   fetctProduct()
  },[])
 
-const addCartHandle=(response)=>{
-  dispatch(addCart(response))
+const addCartHandle=(mySong)=>{
+  dispatch(addCart(mySong))
 }
   return (
   <div className="product-list bg-gray-800">
@@ -45,7 +45,7 @@ const addCartHandle=(response)=>{
         <img src={mySong.image} alt={mySong.title} className=''/>
           <p className='text-white-500 pt-2'>{mySong.title}</p>
           <p className='text-blue-500'>Price: ${mySong.price}</p>
-          <button className='bg-white p-2 mt-3 w-40 rounded-xl text-black' onClick={addCartHandle}>Add Cart</button>
+          <button className='bg-white p-2 mt-3 w-40 rounded-xl text-black' onClick={()=>addCartHandle(mySong)}>Add Cart</button>
         </div>
       ))}
     </div>

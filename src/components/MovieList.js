@@ -81,7 +81,7 @@ const MovieList = () => {
                   <td className="p-2 whitespace-nowrap">
                     <div className="text-left font-medium text-green-500">{list.addYear}</div>
                   </td>
-                  <button type='submit' className="bg-red-600 p-2 py-2 rounded-xl text-white" onClick={deleteHandele}> Delete</button>
+                  <button type='submit' className="bg-red-600 p-2 py-1 rounded-xl text-white" onClick={deleteHandele}> Delete</button>
                 </tr>
             ))}
               </tbody>

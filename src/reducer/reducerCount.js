@@ -12,9 +12,10 @@ const songSlice=createSlice({
   addSong:(state,{ payload})=>{
     state.songs=payload
   },
-  removeSong:(state,{ payload})=>{
-
-    state.songs.splice(payload,1);
+  removeSong:(state,action)=>{
+ const removeItem = action.payload;
+ state.songs=state.songs.filter((item)=>item.id !==removeItem)
+    // state.songs.splice(payload,1);
   }
 }
 })

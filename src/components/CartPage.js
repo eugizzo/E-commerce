@@ -31,17 +31,14 @@ function CartPage() {
         <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
         <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
       </div>
-
       {
-
         allCart.map((item)=>(
       <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
         <div className="flex w-2/5"> {/* product */}
           <div className="w-20">
             <img className="h-24" src={item.image} alt />
           </div>
-          <div className="flex flex-col justify-between ml-4 flex-grow">
-            
+          <div className="flex flex-col justify-between ml-4 flex-grow"> 
             <span className="text-red-500 text-xs">{item.title}</span>
             <a href="#" className="font-semibold hover:text-red-500 text-gray-500 text-xs" onClick={()=>dispatch(removeCart(item.id))}>Remove</a>
           </div>

@@ -70,7 +70,7 @@ return(
                   <td className="p-2 whitespace-nowrap">
                     <div className="text-left font-medium text-green-500">{user.company.name}</div>
                   </td>
-                  <button type='submit' className="bg-red-600 p-2 py-2 rounded-xl text-white"onClick={deleteUserHandle}> Delete</button>
+                  <button type='submit' className="bg-red-600 p-2 py-2 rounded-xl text-white" onClick={deleteUserHandle}> Delete</button>
                 </tr>
             )})}
               </tbody>

@@ -6,7 +6,6 @@ import MovieList from './components/MovieList';
 import UserList from './components/UserList';
 import CartPage from './components/CartPage';
 
-
 const App = () => {
   return (
     <Router>

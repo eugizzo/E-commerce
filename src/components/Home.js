@@ -12,8 +12,6 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
-
-
 const fetctProduct= async ()=>{
  const response = await axios.get('https://fakestoreapi.com/products')
  .then((response)=>{
@@ -25,6 +23,7 @@ const fetctProduct= async ()=>{
   console.log(error)
  })
   
+ 
  }
 
  useEffect(()=>{

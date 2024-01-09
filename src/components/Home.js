@@ -18,12 +18,13 @@ const fetctProduct= async ()=>{
   console.log(response.data)
   dispatch(addSong(response.data))
   setLoading(false);
+  console.log(cartCount)
  })
  .catch((error)=>{
   console.log(error)
  })
   
- 
+
  }
 
  useEffect(()=>{

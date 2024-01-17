@@ -53,7 +53,7 @@ const MovieList = () => {
         <header className="px-5 py-4 border-b border-gray-100">
           <h2 className="font-semibold text-gray-800">Customers</h2>
         </header>
-        <search>hello</search>
+        <search>hello eugene</search>
         <div className="p-3">
           <div className="overflow-x-auto">
             <table className="table-auto w-full">

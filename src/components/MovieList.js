@@ -63,9 +63,7 @@ const MovieList = () => {
                   <th className="p-2 whitespace-nowrap">
                     <div className="font-semibold text-left">movi name</div>
                   </th>
-                  <th className="p-2 whitespace-nowrap">
-                    <div className="font-semibold text-left">id</div>
-                  </th>
+    
                   <th className="p-2 whitespace-nowrap">
                     <div className="font-semibold text-left">year</div>
                   </th>
